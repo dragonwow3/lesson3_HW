@@ -1,7 +1,7 @@
 let brg = document.querySelector('.burger');
 let wl = document.querySelector('.wall');
 let vv = document.querySelector('.fills');
-console.log(vv);
+let bd = document.getElementByTagName('body');
 
 window.addEventListener('click', function(e){
 if (e.target === brg){

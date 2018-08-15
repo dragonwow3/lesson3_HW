@@ -1,8 +1,14 @@
 *{
     margin: 0;
-    padding: 5px;
+    padding: 0 0 5px 0;
     font-family: sans-serif;
     box-sizing: border-box;
+}
+
+.mt .top #current a{
+border: border-box;
+border-bottom: 1px solid orange;
+border-radius: 0;
 }
 
 .fills{
@@ -103,28 +109,91 @@ h3:hover{
     color:rgb(0, 153, 255);
 }
 .menu {
-    margin-top: 5px;
+    margin-top: 35px;
     width: 25%;
     float: left;
     padding: 15px;
 }
 .main {
+    margin-top: 30px;
     width: 75%;
     float: left;
     padding: 15px;
 }
+
+/* --------------------------------PARALLAX BLOCK------------------------------------*/
+
 .new{
+    position: relative;
+    margin-top: 40px;
     text-align: center;
     width: 100%;
+    height:592px;
     float: left;
     padding: 15px;
     font-size: 18px;
-    background-color: rgb(255, 145, 0);
+    background-image: url(../img/par.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: -1;
+    background-size: cover;
+    opacity: 0.8;
 }
 
 .new h4{
+    letter-spacing: 0.3em;
+    top: 35%;
+    position: relative;
+    color: #fff;
+    font-size: 42px;
+}
+
+.new p{
+    position: relative;
+    top: 40%;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* ------PARALLAX text------*/
+
+.text{
+    float: left;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: lightblue;
+    padding: 10px;
+
+}
+
+.text p{
+    position: absolute;
+    top: 38%;
+}
+
+.p1{
+    display: inline-block;
+    padding: 20px;
+    left: 0;
+    width: 50%;
     background-color: #fff;
 }
+.p2{
+    display: inline-block;
+    padding: 20px;
+    right: 0;
+    width: 50%;
+    background-color: #eee;
+}
+
+
+/* --------------------------------------------------------------------------------  */
+
+/*------------LOGO------------*/
 
 span{
     color: rgb(255, 145, 0);
@@ -133,6 +202,9 @@ h1{
     color: #fff;
     font-style: italic;
 }
+
+/*-----------------------------*/
+
 header{
    background-color: #000;
    border: 1px solid black;
@@ -140,7 +212,12 @@ header{
    position: relative;
    width: 100%;
 }
+
 /* ------------Top menu----------- */
+.top li a{
+    padding: 5px;
+}
+
 ul.top{
     list-style: none;
     margin: 0;
@@ -169,44 +246,64 @@ ul.top li a:hover{
 #current a{
 /*  */
 }
+
 /* ------------------Side menu----------- */
 
 ul.side{
-    
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     text-align: center;
+    /*background-color: #000;*/
+    background-image: url(../img/texture3.jpeg);
+    border-radius: 50px;
 }   
 ul.side li{ 
+    display: block;
     margin: 5px;
     font-size: 18px;
-    display: block;
-    background-color: rgb(0, 153, 255);
-    
 }
 ul.side li a{
+    display: inline-block;
+    width: 30%;
     letter-spacing: 0.1em;
     font-size: 20px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
-    
+    border: border-box;
+    border-bottom: 1px solid #fff;
+    border-radius: 10px;
 }
 ul.side li a:hover{
  transition: 0.3s;
  cursor: pointer;
- color: #fff;
+ color: orange;
+ border-bottom: 1px solid orange;
 }
+
 
 /*  aside content*/
 aside{
 font-size: 20px;
 }
 
+/* texture content*/
+.pd{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/texture2.jpg);
+    float: left;
+}
+
 footer{
-    position: absolute;
+    position: relative;
+    float: left;
+    margin-top: 10px;
     bottom: 0;  
     width: 99%;
-    text-align: center
+    text-align: center;
 }
+
